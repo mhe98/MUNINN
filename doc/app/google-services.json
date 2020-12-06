@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "871026089253",
+    "firebase_url": "https://csc-340-01-muninn-96292.firebaseio.com",
+    "project_id": "csc-340-01-muninn-96292",
+    "storage_bucket": "csc-340-01-muninn-96292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871026089253:android:22651eab5e9d47741d4ecc",
+        "android_client_info": {
+          "package_name": "com.raven.muninnmatching"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871026089253-v0rnjjofqh974llb6llbvge0mm08hp6g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5bmUArxEikeXghc35OrLICUk6xg7Xsjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871026089253-v0rnjjofqh974llb6llbvge0mm08hp6g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

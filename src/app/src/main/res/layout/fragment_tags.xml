@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackground">
+
+    <TextView
+        android:id="@+id/tags_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tag_title"
+        android:textColor="@color/whiteText"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050" />
+
+    <TextView
+        android:id="@+id/account_tag1"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/account_tag1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tags_title" />
+
+    <TextView
+        android:id="@+id/account_tag2"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/account_tag2"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_tags1" />
+
+    <TextView
+        android:id="@+id/account_tag3"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/account_tag3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_tags2" />
+
+    <TextView
+        android:id="@+id/platform_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/select_platform"
+
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/change_tags3" />
+
+    <TextView
+        android:id="@+id/genre_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_genre"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/platform_edit" />
+
+
+    <Spinner
+        android:id="@+id/edit_platform"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/colorWhite"
+        android:dropDownHeight="25dp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/platform_edit"
+        app:layout_constraintTop_toBottomOf="@+id/change_tags3" />
+
+    <Spinner
+        android:id="@+id/edit_genre"
+        android:layout_width="120dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorWhite"
+        android:dropDownHeight="25dp"
+        android:textAlignment="center"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/genre_edit"
+        app:layout_constraintTop_toBottomOf="@+id/edit_platform" />
+
+
+    <Button
+        android:id="@+id/save_tag1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/screenBackground"
+        android:text="@string/setTag"
+        android:textColor="@color/colorAccent"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_tag1"/>
+
+    <Button
+        android:id="@+id/change_tags1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/screenBackground"
+        android:text="@string/edit_tag"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/save_tag1"
+        app:layout_constraintTop_toBottomOf="@+id/account_tag1"/>
+
+    <Button
+        android:id="@+id/save_tag2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/screenBackground"
+        android:text="@string/setTag"
+        android:textColor="@color/colorAccent"
+        android:clickable="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_tag2"/>
+
+    <Button
+        android:id="@+id/change_tags2"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/screenBackground"
+        android:text="@string/edit_tag"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/save_tag2"
+        app:layout_constraintTop_toBottomOf="@+id/account_tag2"/>
+
+
+    <Button
+        android:id="@+id/save_tag3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/screenBackground"
+        android:text="@string/setTag"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/account_tag3"/>
+
+    <Button
+        android:id="@+id/change_tags3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="60dp"
+        android:background="@color/screenBackground"
+        android:text="@string/edit_tag"
+        android:textColor="@color/colorAccent"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/save_tag3"
+        app:layout_constraintTop_toBottomOf="@+id/account_tag3"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

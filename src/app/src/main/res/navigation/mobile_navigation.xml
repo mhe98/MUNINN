@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_tags"
+        android:name="com.raven.muninnmatching.Models.Tags.TagsFragment"
+        android:label="@string/title_tags"
+        tools:layout="@layout/fragment_tags" />
+
+    <fragment
+        android:id="@+id/navigation_matches"
+        android:name="com.raven.muninnmatching.Models.Matches.MatchesFragment"
+        android:label="@string/title_matches"
+        tools:layout="@layout/fragment_matches" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.raven.muninnmatching.Models.Search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_messages"
+        android:name="com.raven.muninnmatching.Models.Messages.MessagesFragment"
+        android:label="@string/title_messages"
+        tools:layout="@layout/fragment_messages" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.raven.muninnmatching.Models.Account.AccountFragment"
+        android:label="@string/title_account"
+        tools:layout="@layout/fragment_account" />
+</navigation>

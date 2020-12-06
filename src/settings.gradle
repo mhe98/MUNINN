@@ -1,0 +1,2 @@
+include ':app', ':mobicomkit', ':mobicomkitui', ':mobicommons'
+rootProject.name='Muninn Matching'

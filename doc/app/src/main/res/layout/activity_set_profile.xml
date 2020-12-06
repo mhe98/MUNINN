@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBlack">
+
+
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/SetUpHeader"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSilver"
+            android:gravity="center"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/setUsername"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890 "
+            android:inputType="text"
+            android:background="@color/colorWhite"
+            android:layout_gravity="center_horizontal"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/email_display"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showEmail"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginEnd="70dp"
+                android:textColor="@color/colorSilver"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <EditText
+
+            android:id="@+id/editTextCity"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/setCity"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+            android:background="@color/colorWhite"
+            android:inputType="text"
+            android:layout_gravity="center_horizontal"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/state_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="55dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginRight="70dp"
+                android:layout_marginEnd="70dp"
+                android:text="@string/setState"
+                android:textColor="@color/colorSilver"
+                android:textSize="18sp"/>
+
+            <Spinner
+                android:id="@+id/state_list"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:background="@color/colorWhite"
+                android:dropDownHeight="25dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="65dp"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+        </Space>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_interests"
+            android:textSize="25sp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSilver">
+
+        </TextView>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp">
+        </Space>
+
+        <TextView
+            android:id="@+id/placeholdertag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag1text"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/placeholdertag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag2text"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/placeholdertag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag3text"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+
+
+        <TextView
+            android:id="@+id/add_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/addTag"
+            android:textColor="@color/colorWhite"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/select_platformtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/select_platform"
+                android:textColor="@color/colorWhite"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/platform_btn"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:background="@color/colorWhite"
+                android:dropDownHeight="25dp"
+                android:layout_marginStart="65dp"
+                android:textAlignment="center"
+                android:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/select_genretxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/select_genre"
+                android:textColor="@color/colorWhite"
+                android:visibility="invisible" />
+
+            <Spinner
+                android:id="@+id/genre_btn"
+                android:layout_width="125dp"
+                android:layout_height="25dp"
+                android:background="@color/colorWhite"
+                android:dropDownHeight="25dp"
+                android:layout_marginStart="65dp"
+                android:layout_marginLeft="65dp"
+                android:textAlignment="center"
+                android:autofillHints="@string/genre_button"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="@string/setTag"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+
+        <Button
+            android:id="@+id/confirmButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:text="@string/confirm_btn"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

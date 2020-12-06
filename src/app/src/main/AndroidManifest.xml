@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.raven.muninnmatching">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Models.WelcomePage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity"
+            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+            android:label="@string/app_name"
+            android:parentActivityName=".Models.WelcomePage"
+            android:theme="@style/ApplozicTheme"
+            android:launchMode="singleTask"
+            tools:node="replace">
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Models.WelcomePage" />
+        </activity>
+        <activity android:name=".Models.SignUp" />
+        <activity android:name=".Models.LoginPage" />
+        <activity android:name=".Controllers.HomePage" />
+        <activity android:name=".Models.ForgotPassword" />
+        <activity android:name=".API.ApplozicAPI" />
+        <activity android:name=".Models.SetProfile" />
+
+        <meta-data android:name="com.applozic.application.key"
+            android:value="1b2692e42d614163f557ae1d86ec5efd7" /> <!-- Replace with your Applozic App ID -->
+
+        <meta-data android:name="com.applozic.mobicomkit.notification.smallIcon"
+            android:resource="@drawable/ic_account_circle_24px" /> <!-- Replace this with a valid resource name for Launcher white Icon -->
+
+        <meta-data android:name="main_folder_name"
+            android:value="ChatAPI"
+            tools:node="replace"/> <!-- If you do not set this tag then by default the attachment folder name would be Applozic. Thats why we are using replace node-->
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAYB1vPc4cpn_FJv68eS_ZGe1UasBNwxLI" />  <!--Replace with your geo api key from google developer console  -->
+        <!-- For testing purpose use AIzaSyAYB1vPc4cpn_FJv68eS_ZGe1UasBNwxLI
+        To disable the location sharing via map add this line ApplozicSetting.getInstance(context).disableLocationSharingViaMap(); in onSuccess of Applozic UserLoginTask -->
+
+        <meta-data android:name="activity.open.on.notification"
+            android:value="com.applozic.mobicomkit.uiwidgets.conversation.activity.ConversationActivity" /> <!-- NOTE : Do NOT change this value -->
+
+        <meta-data android:name="com.package.name"
+            android:value="${applicationId}" /> <!-- NOTE: Do NOT change this, it should remain same i.e 'com.package.name' -->
+    </application>
+
+</manifest>

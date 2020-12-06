@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262A86</color>
+    <color name="colorPrimaryDark">#08090C</color>
+    <color name="colorAccent">#36a5f5</color>
+    <color name="screenBackground">#08090C</color>
+    <color name="whiteText">#FFFFFF</color>
+    <color name="backgroundText">#645E5E</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="notification">#FC3158</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorSilver">#C0C0C0</color>
+</resources>
